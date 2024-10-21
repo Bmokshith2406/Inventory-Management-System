@@ -1,0 +1,97 @@
+.order-inventory-form {
+  max-width: 400px; /* Limit width for larger screens */
+  margin: 20px auto; /* Center the form */
+  padding: 20px; /* Padding for inner spacing */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Background color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.order-inventory-form .form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+.order-inventory-form label {
+  display: block; /* Block display for labels */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 5px; /* Space below label */
+  color: #333; /* Label color */
+}
+
+.order-inventory-form input,
+.order-inventory-form select {
+  width: 100%; /* Full width for inputs and selects */
+  padding: 8px; /* Inner padding */
+  font-size: 14px; /* Font size for input text */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+  box-sizing: border-box; /* Ensure padding and borders are included in total width */
+}
+
+.order-inventory-form input:focus,
+.order-inventory-form select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.order-inventory-form .submit-button {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Inner padding for button */
+  font-size: 16px; /* Font size for button text */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.order-inventory-form .submit-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+.order-inventory-form select {
+  appearance: none; /* Remove default appearance */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3e%3cpath fill='%23007bff' d='M5 6L0 0h10z'/%3e%3c/svg%3e"); /* Custom arrow */
+  background-repeat: no-repeat; /* No repeat for background image */
+  background-position: right 10px center; /* Position of custom arrow */
+  background-size: 10px; /* Size of custom arrow */
+}
+
+.no-inventory-message {
+  text-align: center; /* Centered text */
+  font-weight: bold; /* Bold text */
+  font-size: 18px; /* Font size */
+  color: #d9534f; /* Emphasis color */
+  padding: 20px; /* Inner padding */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .order-inventory-form {
+    padding: 15px; /* Reduced padding for smaller screens */
+    margin: 10px; /* Reduced margin for smaller screens */
+    max-width: 90%; /* Adjust max width to 90% on small screens */
+  }
+
+  .order-inventory-form label {
+    font-size: 16px; /* Adjust label font size */
+  }
+
+  .order-inventory-form input,
+  .order-inventory-form select {
+    font-size: 16px; /* Adjust input/select font size */
+    padding: 10px; /* Increase padding for easier interaction */
+  }
+
+  .order-inventory-form .submit-button {
+    font-size: 18px; /* Increase button font size */
+    padding: 12px; /* Increase button padding */
+  }
+
+  .no-inventory-message {
+    font-size: 16px; /* Adjust message font size */
+    padding: 15px; /* Adjust padding */
+  }
+}

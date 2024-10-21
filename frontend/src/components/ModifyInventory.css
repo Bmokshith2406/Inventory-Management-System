@@ -1,0 +1,176 @@
+/* Modify Inventory Styles */
+.modify-inventory {
+  max-width: 65%; /* Limit width for larger screens */
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.modify-inventory:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.modify-inventory h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.inventory-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.no-inventory-message {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.inventory-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inventory-item:hover {
+  background-color: #f0f8ff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-item input {
+  margin: 0 8px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 90px; /* Width for easier interaction */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.inventory-item input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #444;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.item-quantity,
+.item-price {
+  font-size: 16px;
+  margin-right: 15px;
+  color: #555;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modify-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modify-button:hover {
+  transform: scale(1.05);
+}
+
+.modify-button.increase {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.modify-button.decrease {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.modify-button.edit {
+  background-color: #2196f3; /* Blue */
+  color: white;
+}
+
+.modify-button.save {
+  background-color: #008CBA; /* Dark Blue */
+  color: white;
+}
+
+.modify-button.cancel {
+  background-color: #ff9800; /* Orange */
+  color: white;
+}
+
+.modify-button:active {
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .modify-inventory {
+    margin: 20px; /* Reduce margin for smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .modify-inventory h2 {
+    font-size: 22px; /* Slightly smaller header on smaller screens */
+  }
+
+  .inventory-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to start */
+  }
+
+  .item-name,
+  .item-quantity,
+  .item-price {
+    margin-bottom: 8px; /* Space between items when stacked */
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically */
+    margin-top: 10px;
+    align-items: flex-start; /* Align buttons to the left */
+  }
+
+  .inventory-item input {
+    width: 100%; /* Full width for input on small screens */
+    margin: 8px 0; /* Margin on top and bottom for better spacing */
+  }
+}
+
+@media (max-width: 600px) {
+  .modify-inventory {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .modify-button {
+    width: 100%; /* Full width buttons for smaller screens */
+    font-size: 16px; /* Adjust button size */
+  }
+}

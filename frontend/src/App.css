@@ -1,0 +1,228 @@
+/* General styles for the app */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: black;
+}
+
+/* Styles for the navbar */
+.navbar {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Evenly distribute space between items */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+  padding: 10px;
+  position: relative; /* Position relative for absolute positioning of the navbar links */
+}
+
+.navbar-logo {
+  margin-left: 20px; /* Add space to the left of the logo */
+}
+
+.app-logo {
+  width: 80px; /* Adjust logo size to be responsive */
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px; /* Space between links */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-right: 20px;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.nav-link:hover {
+  background-color: rgb(184, 181, 181);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px; /* Add space to the right of the hamburger */
+}
+
+.bar {
+  height: 4px;
+  width: 25px;
+  background-color: #333; /* Hamburger color */
+  margin: 3px 0; /* Space between bars */
+  transition: all 0.3s ease;
+}
+
+/* Styles for the footer */
+.footer {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px 0;
+  border-radius: 20px;
+  margin-top: auto; /* Push footer to the bottom */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+}
+
+.active-link {
+  font-weight: bold;
+  background-color: #575757; /* Background for active link */
+}
+
+/* Form styles */
+.order-inventory-form,
+.modify-inventory-form,
+.add-inventory-form {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Additional stock info styles */
+.stock-info {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+/* For small devices (tablets, mobile) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row; 
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .navbar-logo {
+    margin: 0; /* Center logo for small devices */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    gap: 35px; /* Less space between links on small devices */
+    width: 100%; /* Full width for the links */
+    position: absolute; /* Position absolute */
+    top: 60px; /* Adjust based on navbar height */
+    left: 0; /* Align to the left */
+    background-color: white; /* Match background */
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 1; /* Ensure it’s above other content */
+  }
+
+  .navbar-links.open {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on small screens */
+  }
+  
+  .app-logo {
+    width: 60px; /* Smaller logo on small screens */
+  }
+  
+  h1 {
+    font-size: 24px; /* Smaller heading size */
+  }
+
+  .form-group input, .form-group select {
+    padding: 8px; /* Slightly smaller inputs for small screens */
+  }
+
+  .submit-button {
+    padding: 10px; /* Adjust button padding for small screens */
+  }
+}
+
+/* For very small devices (phones) */
+@media (max-width: 480px) {
+  .navbar {
+    width: 90%; /* Full-width navbar on small devices */
+  }
+
+  .footer {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-logo {
+    width: 50px; /* Smaller logo on very small screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Smaller font size for headings */
+  }
+}

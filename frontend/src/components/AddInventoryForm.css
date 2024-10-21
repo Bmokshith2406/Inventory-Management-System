@@ -1,0 +1,122 @@
+/* Inventory Form Styles */
+.inventory-form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.inventory-form:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+  background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:active {
+  background-color: #1e7e34;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .inventory-form {
+    width: 80%; /* Adjust width for tablets */
+    padding: 30px; /* Reduce padding for tablets */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 15px; /* Adjust input font size for tablets */
+  }
+
+  .submit-button {
+    font-size: 17px; /* Adjust button size for tablets */
+  }
+}
+
+@media (max-width: 500px) {
+  .inventory-form {
+    width: 90%; /* Almost full width for small screens */
+    padding: 20px; /* Reduce padding further for smaller screens */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px; /* Reduce input font size for mobile */
+  }
+
+  .submit-button {
+    font-size: 16px; /* Adjust button size for mobile */
+  }
+}
+
+@media (max-width: 320px) {
+  .inventory-form {
+    width: 95%; /* Full width for very small screens */
+    padding: 15px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px; /* Further reduce font size for very small screens */
+  }
+
+  .submit-button {
+    font-size: 14px; /* Adjust button size for very small screens */
+  }
+}

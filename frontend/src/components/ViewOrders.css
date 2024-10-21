@@ -1,0 +1,82 @@
+/* ViewOrders.css */
+.view-orders {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  width: 75%; /* Default width for larger screens */
+  margin: auto; /* Center the component */
+  font-size: 16px; /* Default font size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .view-orders {
+    width: 90%; /* Adjust width for smaller screens */
+    font-size: 14px; /* Slightly reduce font size for readability */
+  }
+}
+
+.orders-table {
+  width: 100%; /* Full width for the table */
+  margin-top: 20px;
+  border-collapse: collapse; /* Collapse borders */
+}
+
+/* Message when there are no orders */
+.no-orders-message {
+  text-align: center; /* Center the message */
+  font-size: 18px; /* Message font size */
+  color: #d9534f; /* Emphasis color */
+  padding: 20px; /* Padding around the message */
+}
+
+/* Table styling */
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd; /* Border for table cells */
+  padding: 8px; /* Padding for table cells */
+  text-align: center; /* Centered text */
+}
+
+/* Header styling */
+.orders-table th {
+  background-color: #f2f2f2; /* Header background color */
+  font-weight: bold; /* Bold header text */
+}
+
+/* Even row styling */
+.orders-table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.36); /* Dark background for even rows */
+  color: white; /* White text for contrast */
+}
+
+
+/* Increased padding for header and cells */
+.orders-table th,
+.orders-table td {
+  padding: 12px 15px; /* Padding for table cells */
+}
+
+/* Center alignment for table cells */
+.orders-table td {
+  text-align: center; /* Center text in table cells */
+}
+
+/* Responsive adjustments for table */
+@media (max-width: 600px) {
+  .orders-table {
+    font-size: 14px; /* Reduce font size for smaller devices */
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Make the table scrollable on small screens */
+  .orders-table {
+    display: block; /* Use block display to enable scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+}
